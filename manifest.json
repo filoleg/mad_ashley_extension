@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "Mad Ashley",
-	"description": "This extension looks at all of the emails present at a given page and highlights those that are registered on AshleyMadison in red.",
-	"version": "0.1",
+	"description": "An extension to perform mass checks for AshleyMadison registered users on the pages you visit.",
+	"version": "0.2",
 	"permissions": [
 		"storage"
 			],
