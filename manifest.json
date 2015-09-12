@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "Mad Ashley",
+	"description": "This extension looks at all of the emails present at a given page and highlights those that are registered on AshleyMadison in red.",
+	"version": "0.1",
+	"permissions": [
+		"storage"
+			],
+	"icons": { 
+		"16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png" 
+	},
+	"browser_action": {
+		"default_icon": {                    
+			"19": "img/icon48.png",          
+			"38": "img/icon48.png"          
+		},
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js":["js/jquery-2.1.4.min.js","js/content.js"]
+    }
+  	],
+
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"web_accessible_resources": [
+		"img/icon128.png"
+	]
+}

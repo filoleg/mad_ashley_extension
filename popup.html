@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	
+		<title>Chrome Extension with Twitter Bootstrap 3.0</title>
+		
+		<!-- Scripts -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/popup.js"></script>
+		
+		<!-- Cascading Style Sheets -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/custom.css" rel="stylesheet" media="screen">		
+	</head>
+	
+	<body>
+	
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#" id="status"></a>
+			</div>
+			<!--<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="glyphicon glyphicon-thumbs-up"></i>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+							<li>
+								<a href="#">One more separated link</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>-->
+		</nav>
+		
+		<section>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th colspan="2">Email</th>
+						<th>Found</th>
+					</tr>
+				</thead>
+				<div class="input-group">
+            		<input type="text" class="form-control" placeholder="Enter any email you want to check" name="search-term" id="search-term">
+            		<div class="input-group-btn">
+                		<button class="btn btn-default" id="search_btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            		</div>
+            		<!--<a id="ayy_pop" data-trigger="manual" data-toggle="popover" title="email" data-placement="top" data-content="guilty">
+            		</a>-->
+            		
+        		</div>
+				<tbody id="tbody">
+					<!--<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td colspan="2">Larry the Bird</td>
+						<td>@twitter</td>
+					</tr>-->
+				</tbody>
+			</table>
+		</section>
+		
+	</body>
+</html>
